@@ -1,0 +1,156 @@
+header {
+    z-index: 10;
+}
+
+.header-part {
+    img {
+        width: 200px;
+    }
+}
+
+.sect1 {
+    background-image: url("https://startbootstrap.github.io/startbootstrap-agency/assets/img/header-bg.jpg");
+    height: 799px !important;
+    background-size: cover;
+}
+
+.menu {
+    nav {
+        ul {
+            li {
+                a {
+                    color: #FED136 !important;
+                }
+            }
+        }
+    }
+}
+
+.home-txt {
+    position: absolute;
+    top: 15rem;
+}
+
+.text2 {
+    font-size: 70px;
+}
+
+.sect1 button {
+    height: 60px;
+}
+
+.home-txt button:hover {
+    background-color: #e0b20d !important;
+}
+
+.cards {
+    i {
+        width: 130px;
+        height: 130px;
+        margin: 0 auto;
+        border-radius: 50%;
+        font-size: 60px;
+    }
+}
+
+.cards-portfolio {
+    .img-p {
+        width: 450px;
+        height: 337.5px;
+        object-fit: cover;
+    }
+}
+
+.team {
+    background-color: #F8F9FA;
+    .down-team {
+        .cards-team {
+            img {
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                border: 5px solid #DFE0E1;
+            }
+
+            .social {
+                div {
+                    border-radius: 50%;
+                    width: 30px;
+                    height: 30px;
+                    background-color: black;
+
+                    &:hover {
+                        transition: all .5s;
+                        background-color: rgb(65, 65, 65);
+                    }
+                }
+            }
+        }
+    }
+}
+.sponsor{
+    .companies{
+        .img-sponsor{
+            width: 150px;
+            height: 90px;
+        }
+    }
+}
+.form{
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.4)), url("https://startbootstrap.github.io/startbootstrap-agency/assets/img/map-image.png");
+    height: 600px;
+    .down-form{
+        .left-form{
+            .input-form{
+               width: 10rem;
+            }
+        }
+    }
+}
+footer{
+    .social{
+        div {
+            border-radius: 50%;
+            width: 45px;
+            height: 45px;
+            background-color: black;
+
+            &:hover {
+                transition: all .5s;
+                background-color: rgb(65, 65, 65);
+            }
+        }
+    }
+    .right-f{
+        a{
+            &:hover{
+                transition: all .7s;
+                text-decoration: underline !important;
+            }
+        }
+    }
+}
+@media (max-width: 600px) {
+    .menu {
+        display: none;
+    }
+
+    .text2 {
+        font-size: 40px;
+    }
+
+    .down-servises {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 200px;
+        width: 75%;
+    }
+
+    .img-p {
+        width: 200px !important;
+        height: 200px !important;
+    }
+}
