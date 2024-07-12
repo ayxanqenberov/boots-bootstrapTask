@@ -12,7 +12,7 @@ header {
   background-size: cover;
 }
 
-.menu nav ul li a {
+.menu nav ul li a:hover {
   color: #FED136 !important;
 }
 
@@ -46,6 +46,73 @@ header {
   height: 337.5px;
   object-fit: cover;
 }
+.cards-portfolio .img-p:hover {
+  transition: all 0.5s;
+}
+.cards-portfolio .img-p:hover .hover {
+  display: inline !important;
+}
+.cards-portfolio .hover {
+  width: 450px;
+  height: 337.5px;
+  background-color: #FED136;
+  position: absolute;
+  display: none !important;
+}
+.cards-portfolio .hover i {
+  font-size: 50px;
+  color: white;
+}
+
+.about {
+  height: 900px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.about .up-about {
+  position: absolute;
+  top: 0;
+}
+.about .list1 {
+  position: relative;
+}
+.about .list1 .timeline-item {
+  position: absolute;
+  top: -13.8rem;
+  left: 15rem;
+}
+.about .list2 {
+  position: relative;
+}
+.about .list2 .timeline-item {
+  position: absolute;
+  top: -5rem;
+  left: 39.5rem;
+}
+.about .list3 {
+  position: relative;
+}
+.about .list3 .timeline-item {
+  position: absolute;
+  top: 4rem;
+  left: 15rem;
+}
+.about .list4 {
+  position: relative;
+}
+.about .list4 .timeline-item {
+  position: absolute;
+  top: 12rem;
+  left: 39rem;
+}
+.about .rounded-circle::after {
+  content: "";
+  background-color: red;
+  height: 10px;
+  width: 1px;
+  position: absolute;
+  z-index: 10;
+}
 
 .team {
   background-color: #F8F9FA;
@@ -73,7 +140,8 @@ header {
 }
 
 .form {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.4)), url("https://startbootstrap.github.io/startbootstrap-agency/assets/img/map-image.png");
+  background-image: url("https://startbootstrap.github.io/startbootstrap-agency/assets/img/map-image.png");
+  background: black;
   height: 600px;
 }
 .form .down-form .left-form .input-form {

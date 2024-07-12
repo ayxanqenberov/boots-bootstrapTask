@@ -19,7 +19,9 @@ header {
         ul {
             li {
                 a {
-                    color: #FED136 !important;
+                    &:hover{
+                        color: #FED136 !important;
+                    }
                 }
             }
         }
@@ -58,9 +60,75 @@ header {
         width: 450px;
         height: 337.5px;
         object-fit: cover;
+        &:hover{
+            transition: all .5s;
+            .hover{
+                display: inline !important;
+            }
+        }
+    }
+    .hover{
+        width: 450px;
+        height: 337.5px;
+        background-color: #FED136;
+        position: absolute;
+        display: none !important;
+        i{
+            font-size: 50px;
+            color: white;
+        }
     }
 }
 
+.about{
+    height: 900px;
+    position: relative;
+    margin-bottom: 30px;
+    .up-about{
+        position: absolute;
+        top: 0;
+    }
+    .list1{
+        position: relative;
+        .timeline-item{
+            position: absolute;
+            top: -13.8rem;
+            left: 15rem;
+        }
+    }
+    .list2{
+        position: relative;
+        .timeline-item{
+            position: absolute;
+            top: -5rem;
+            left: 39.5rem;
+        }
+    }
+    .list3{
+        position: relative;
+        .timeline-item{
+            position: absolute;
+            top: 4rem;
+            left: 15rem;
+        }
+    }
+    .list4{
+        position: relative;
+        .timeline-item{
+            position: absolute;
+            top: 12rem;
+            left: 39rem;
+        }
+    }
+    .rounded-circle::after{
+        content: "";
+        background-color: red;
+        height: 10px;
+        width: 1px;
+        position: absolute;
+        z-index: 10;
+    }
+}
 .team {
     background-color: #F8F9FA;
     .down-team {
@@ -88,6 +156,7 @@ header {
         }
     }
 }
+
 .sponsor{
     .companies{
         .img-sponsor{
@@ -96,8 +165,10 @@ header {
         }
     }
 }
+
 .form{
-    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.4)), url("https://startbootstrap.github.io/startbootstrap-agency/assets/img/map-image.png");
+    background-image: url("https://startbootstrap.github.io/startbootstrap-agency/assets/img/map-image.png");
+    background: black;
     height: 600px;
     .down-form{
         .left-form{
